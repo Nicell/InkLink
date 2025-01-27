@@ -14,6 +14,8 @@ A collaborative drawing system with a web interface that syncs to an e-paper dis
 
 ### Try out the web demo [here](https://inklink.winans.io)
 
+### Read [my blog post](https://nick.winans.io/blog/ink-link/) to get an overview of the project
+
 This project uses a 7.5" tri-color e-paper display to display the drawing from the web interface. The website is real-time and supports multiple concurrent users with websockets. The e-paper display will update every three minutes.
 
 ## Hardware Setup
