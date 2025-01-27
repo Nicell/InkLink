@@ -53,7 +53,7 @@ Total cost: ~$45-$85
      - adafruit_connection_manager
      - adafruit_requests
 
-3. Copy the CircuitPython files to your device through the web file manager or code editor:
+3. Copy the [CircuitPython files](https://github.com/Nicell/InkLink/tree/main/circuitpython) to your device through the web file manager or code editor:
    - `waveshare7in5bv3.py`
    - `draw.py` - Make sure to set the host variable to your server's domain
    - `bmpread.py`
