@@ -3,11 +3,18 @@
 
 A collaborative drawing system with a web interface that syncs to an e-paper display.
 
+### Key Features
+- Real-time collaborative drawing interface
+- Web-based access from any device
+- E-paper display sync every 3 minutes
+- Multi-user support via WebSocket
+- Tri-color display support (black, white, and red)
+
 ![InkLink](./images/inklink.jpg)
 
 Try out the web demo [here](https://inklink.winans.io)
 
-This project uses a 7.5" tri-color e-paper display to display the drawing from the web interface. The website is real-time and supports multiple concurrent users with websockets.The e-paper display will update every three minutes.
+This project uses a 7.5" tri-color e-paper display to display the drawing from the web interface. The website is real-time and supports multiple concurrent users with websockets. The e-paper display will update every three minutes.
 
 ## Hardware Setup
 Total cost: ~$45-$85
