@@ -1,0 +1,31 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx.Dockerfile
+      args:
+        - VITE_WEB_TITLE=${VITE_WEB_TITLE:-InkLink}
+    expose:
+      - 80
+    depends_on:
+      - app
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/", "&&", "curl", "-f", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 2s
+
+  app:
+    build: .
+    expose:
+      - 3001
+    environment:
+      - NODE_ENV=production
+      - CLEAR_CRON=${CLEAR_CRON}
+    volumes:
+      - drawings:/app/drawings
+    restart: unless-stopped
+
+volumes:
+  drawings:

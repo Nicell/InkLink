@@ -1,0 +1,48 @@
+{
+  "name": "inklink",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx vite",
+    "build": "tsc -b && bun run build:ci",
+    "build:ci": "bunx --bun vite build",
+    "lint": "eslint .",
+    "preview": "bunx --bun vite preview",
+    "server": "bun run server/index.ts",
+    "dev:all": "concurrently \"bun run dev\" \"bun run server\""
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.65",
+    "@radix-ui/react-dialog": "^1.1.4",
+    "@radix-ui/react-slot": "^1.1.1",
+    "babel-plugin-react-compiler": "^19.0.0-beta-e552027-20250112",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cron": "^3.5.0",
+    "lucide-react": "^0.471.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "bun-types": "^1.1.43",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.18.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.7.3",
+    "typescript-eslint": "^8.20.0",
+    "vite": "^6.0.9"
+  }
+}
